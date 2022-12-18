@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import ttk
 import all_frames
 import inspect
 
@@ -20,8 +19,7 @@ class windows(tk.Tk):
             if inspect.isclass(obj):
                 if obj.__name__ == 'Thread':
                     pass
-                elif obj.__name__ == 'MainPage':
-                # elif obj.__name__ == 'beginner_lesson_10':
+                elif obj.__name__ == 'sign_in':
                     all_classes.insert(0,obj)
                 elif obj.__name__ == 'choose_level':
                     self.level_class.insert(0,obj)
